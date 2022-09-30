@@ -21,7 +21,6 @@ nav {
     transform: translateY(67%);
     display: grid;
     grid-gap: 1%;
-    scroll-padding: 50%;
     grid-template-columns: 15% 15% 15% 15%;
     text-align: center;
     line-height: 50px;
@@ -50,7 +49,7 @@ a {
 .bgbox{
     display: grid;
     grid-template-columns: 1em 90% 1em;
-    grid-template-rows: 3em 5em 3em 5em 3em;
+    grid-template-rows: 3em 1fr 3em 1fr 3em 1fr;
     background-color: #2A2E3E;
 }
 
@@ -92,4 +91,23 @@ p {
 
 .icon {
     transform: translate(85vw,-15vh);
+}
+
+.top {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(137, 140, 169);
+    display: inline-block;
+    bottom:0;
+    left:0;
+    transform: translate(50%, -100%);
+    text-align: center;
+    line-height: 1em;
+}
+
+.top a{
+    text-decoration: none;
+    background-color: transparent;
 }

@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body style="margin: 0; height: 300vh">
+<body style="margin: 0; height: 100vh">
     <header>
         <h1>Titanfall 2 Modding</h1>
         <h3>Models</h3>
@@ -29,26 +29,36 @@
         </div>
         <div class="bgbox">
             <div></div>
-            <h2>Getting the model from the vpk</h2>
+            <h2 id="decompiling">Getting the model from the vpk</h2>
             <div></div>
             <div></div>
             <p>
                 Use TitanfallVPKTool to open "Titanfall2\vpk\englishclient_mp_common.bsp.pak000_dir.vpk" and look for
-                the model that you want to replace.
+                the model that you want to replace. <br> <br>
+                <img src="https://external-preview.redd.it/109LiS0PgI0ffYWdXcPyPgF821S89FtmyKBlBfhhiUs.jpg?auto=webp&s=39040a4c9f5da65566199df6569ea53c4a355b51"
+                    alt="" width="600">
             </p>
             <div></div>
-            <hr style="height: 0.7em; width: 100%;"></hr>
-            <h2>importing into Blender</h2>
+            <hr style="height: 0.7em; width: 100%;">
+            </hr>
+            <h2 id="importing">importing into Blender</h2>
             <div></div>
             <div></div>
             <p>
                 In Blender add the blender source tools addon to your enabled addons. <br>
                 When you have gotten the smd from the vpk open Blender and import it. <br>
-                Also import the model that you want to replace it with.
+                Also import the model that you want to replace it with. <br> <br>
+                Now that you have imported the models make sure that the new model is the same size as the one that you
+                want to replace and if has an armature make it so that they have the same pose. <br> <br>
+                Now apply the armature pose to the model and remove the armature. <br>
+                After this you parent it to the skeleton of the model you want to replace. <br>
+                I recommend that you keep the model you want to replace a bit to the side instead of deleting it, so
+                that you can see how you will need to weight paint the new model for it to work properly.
             </p>
             <div></div>
-            <hr style="height: 0.7em; width: 100%;"></hr>
-            <h2>Weight <i>Pain</i>ting</h2>
+            <hr style="height: 0.7em; width: 100%;">
+            </hr>
+            <h2 id="weight">Weight <i>Pain</i>ting</h2>
             <div></div>
             <div></div>
             <p>
@@ -60,14 +70,19 @@
         <div class="selectbox">
             <div></div>
             <ul>
-                <li>test1</li>
+                <li><a href="#decompiling">Model from VPK</a></li>
                 <br>
-                <li>test2</li>
+                <li><a href="#importing">Importing</a></li>
                 <br>
-                <li>test3</li>
+                <li><a href="#weight">Weight painting</a></li>
             </ul>
         </div>
     </div>
+    <a href="">
+        <div class="top">
+            <h2>^</h2>
+        </div>
+    </a>
 </body>
 
 </html>
